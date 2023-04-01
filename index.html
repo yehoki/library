@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Library</h1>
+    </header>
+
+    <main class="main">
+        <div class="add-book-area">
+            <button class="add-book">Add book</button>
+        </div>
+      <div class="book-grid">
+      </div>
+    </main>
+    <footer>
+      <p>Copyright © 2023 yehoki</p>
+      <a href="https://github.com/yehoki/">
+        <img src="images/github-mark.svg" alt="github logo" class="svg" />
+      </a>
+    </footer>
+
+    <div class="overlay">
+    <div class="new-book">
+      <div class="form-top">
+        <img src="images/cross.svg" alt="cross" class="svg" id="overlay-exit" />
+        <h1>Add new book</h1>
+      </div>
+      <form action="#" method="post" id="add-new-book">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required/>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" required/>
+        <label for="Pages">Pages</label>
+        <input type="number" name="pages" id="pages" required/>
+        <label for="book-read">Read?</label>
+        <input type="checkbox" name="book-read" id="book-read" class="book-read"/>
+        <button type="submit" class="add-book-button">Add</button>
+      </form>
+    </div>
+</div>
+  </body>
+</html>
