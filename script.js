@@ -8,13 +8,16 @@ const titleInput = document.querySelector("#title");
 
 let myLibrary = [];
 
-function Book(title, author, pages, read, id) {
-  this.title = title;
-  this.author = author;
-  this.page = pages;
-  this.read = read;
-  this.id = id;
+class Book {
+  constructor(title, author, pages, read, id) {
+    this.title = title;
+    this.author = author;
+    this.page = pages;
+    this.read = read;
+    this.id = id;
+  }
 }
+
 
 const makeBookHTML = function createHTMLBook(bookObject) {
   // Create the div holding the whole book together
